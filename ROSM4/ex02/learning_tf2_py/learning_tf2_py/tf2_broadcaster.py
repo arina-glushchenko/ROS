@@ -22,8 +22,8 @@ class DynamicFrameBroadcaster(Node):
     
         seconds, n = self.get_clock().now().seconds_nanoseconds()
         r = self.get_parameter('radius').get_parameter_value().integer_value
-        d_of_r = self.get_parameter('direction_of_rotation').get_parameter_value().integer_value
-        x = seconds * d_of_r
+        direction_of_r = self.get_parameter('direction_of_rotation').get_parameter_value().integer_value
+        x = seconds * direction_of_r
         
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()

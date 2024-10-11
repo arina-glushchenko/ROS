@@ -24,7 +24,7 @@ def generate_launch_description():
             executable='tf2_broadcaster',
             name='dynamic_broadcaster',
             parameters=[
-                {'radius': 4},
+                {'radius': 1},
                 {'direction_of_rotation': 1}
             ]
         ),
