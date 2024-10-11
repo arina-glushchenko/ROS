@@ -88,7 +88,7 @@ def main(args=None):
         action_server = CommandsActionServer()
         action_subscriber = CommandsActionSubscriber()
     
-        executor = MultiThreadedExecutor(num_threads=4)
+        executor = MultiThreadedExecutor(num_threads=2)
         executor.add_node(action_server)
         executor.add_node(action_subscriber)
         
